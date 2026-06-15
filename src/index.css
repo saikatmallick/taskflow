@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  --color-brand-50: #fcfbf9;
+  --color-brand-100: #f5f2ed;
+  --color-brand-200: #e8e3d9;
+  --color-brand-505: #606C38;
+  --color-brand-600: #4f582f;
+  --color-brand-700: #283618;
+  --color-brand-800: #1b2611;
+}
+
+@layer base {
+  html, body {
+    @apply bg-[#FDFBF7] text-[#4A443F] antialiased font-sans selection:bg-[#606C38]/10 selection:text-[#606C38];
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-[#F5F2ED];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#E8E3D9] rounded-full hover:bg-slate-300 transition-colors;
+  }
+}

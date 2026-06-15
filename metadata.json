@@ -1,0 +1,6 @@
+{
+  "name": "Task Management Application",
+  "description": "A secure, responsive task management application featuring live Firestore updates, custom status tracking, priorities, and Google user authentication.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
